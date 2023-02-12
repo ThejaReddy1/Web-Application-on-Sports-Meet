@@ -1,0 +1,30 @@
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppines',sans-serif;
+        }
+        body
+        {
+            display:flex;
+            justify-content:center;
+            background-color: black;
+            background-repeat: no-repeat;
+            
+        }
+        .card img{
+            width: 250px;
+            height: 250px;
+            border-radius:20px;
+            z-index:10;
+        }
+        .p{
+            color:#fff;
+            display:block;
+            letter-spacing: 3px;
+        }
+       table tr td{
+           align-items: center;
+           padding: 30px;
+       }
+        

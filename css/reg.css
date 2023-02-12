@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(../clgpic/sp.jpg);
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-repeat: no-repeat;
+}
+input,select{
+    height: 30px;
+    border-radius: 8px;
+}
+input:hover,select.option:hover{
+    border-color: blue;
+}
+.header{
+    color: aqua;
+}
+.p{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom:15px;
+    color:aquamarine;
+}
+.b{
+    width:300px;
+    height:40px;
+    padding: 10px;
+    font-size: large;
+    border-radius: 8px;
+    text-align: center;
+    
+}
+.b:hover {
+    background-color: orange;
+    color: blue;
+}
+

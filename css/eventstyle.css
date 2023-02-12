@@ -1,0 +1,80 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    display:flex;justify-content: center;align-items: center;
+    height:100vh;
+        
+}
+.box{
+    width:250px; height:250px;position:relative;
+}
+.box .front,
+.box .back{
+    position:absolute;
+    width:250px; height:250px;
+    background: white;
+    backface-visibility: hidden; cursor: pointer;
+    border-radius:20px;
+    box-shadow: 0 5px 30px rgba(163,61,21,0.200 ),
+    0 -5px 30px rgba(115,55,212,0.200);
+    transition: transform .4s;
+}
+.box .back{
+    display:flex;
+    justify-content:cenetr;
+    align-items:cenetr;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+}
+.box .back p{
+    margin:10px 20px;
+    text-align: cenetr;
+}
+.box .front img{
+    width:100%;
+    height:100%;
+    border-radius:0 0 20px 20px;
+    position:absolute;
+}
+.box:hover .front{
+    transform: perspective(800px) rotateX(100deg);
+}
+.box:hover .back{
+    border-radius: 20px 20px 0 0;
+    transform: perspective(800px) rotateX(0);
+}
+.ScriptTop {
+    
+    float: left;
+    font-size: 0.69em;
+    font-weight: 600;
+    line-height: 2.2;
+    padding: 12px 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* To Navigation Style 1*/
+.ScriptTop ul {
+    margin: 24px 0;
+    padding: 0;
+    text-align: left;
+}
+.ScriptTop li{
+	list-style:none;	
+	display:inline-block;
+}
+.ScriptTop li a {
+    background: #6a4aed none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.ScriptTop li a:hover{
+	background:#000;
+	color:#fff;
+}

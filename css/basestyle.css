@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Poppines:wght@500&display=swap');
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppines',sans-serif;
+        }
+        body
+        {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            
+            background-color: black;
+            background-repeat: no-repeat;
+            
+        }
+        .card{
+            width:150px;
+            height:150px;
+            box-shadow:0 10px 10px rgba(0,0,0,0.212);
+            background:white;
+            display:flex;
+            border-radius:20px;
+            justify-content:center;
+            position:relative;
+            transition:all 4s ease;
+        }
+        .card1{
+            width:150px;
+            height:150px;
+            box-shadow:0 10px 10px rgba(0,0,0,0.212);
+            background:white;
+            display:flex;
+            border-radius:20px;
+            justify-content:center;
+            position:relative;
+            transition:all 4s ease;
+        }
+        .card2{
+            width:150px;
+            height:150px;
+            box-shadow:0 10px 10px rgba(0,0,0,0.212);
+            background:white;
+            display:flex;
+            border-radius:20px;
+            justify-content:center;
+            position:relative;
+            transition:all 4s ease;
+        }
+        .card img{
+            width: 150px;
+            height: 150px;
+            border-radius:20px;
+            box-shadow:0 0 10px rgba(0,0,0,0.212);
+            cursor:pointer;
+            z-index:10;
+            transition:all 4s ease;
+        }
+        .card1 img{
+            width: 150px;
+            height: 150px;
+            border-radius:20px;
+            box-shadow:0 0 10px rgba(0,0,0,0.212);
+            cursor:pointer;
+            z-index:10;
+            transition:all 4s ease;
+        }
+        .card2 img{
+            width: 150px;
+            height: 150px;
+            border-radius:20px;
+            box-shadow:0 0 10px rgba(0,0,0,0.212);
+            cursor:pointer;
+            z-index:10;
+            transition:all 4s ease;
+        }
+        .card:hover img{
+            margin-top:-30px;
+        }
+        .card1:hover img{
+            margin-top:-30px;
+        }
+        .card2:hover img{
+            margin-top:-30px;
+        }
+        .card:hover{
+            width:160px;
+        }
+        .card1:hover{
+            width:160px;
+        }
+        .card2:hover{
+            width:160px;
+        }
+        .card::before{
+            content: "\f3c5 Admin Login";
+            letter-spacing:0.2em;
+            position:absolute;
+            bottom:8px;
+            left:20px;
+            color:rgb(51,51,51);
+            font-size:0.6em;
+            font-family:'Font Awesome 5 Free';
+            font-weight:700;
+        }
+        .card1::before{
+            content: "\f3c5 Student Login";
+            letter-spacing:0.2em;
+            position:absolute;
+            bottom:8px;
+            left:20px;
+            color:rgb(51,51,51);
+            font-size:0.6em;
+            font-family:'Font Awesome 5 Free';
+            font-weight:700;
+        }
+        .card2::before{
+            content: "\f3c5 Events";
+            letter-spacing:0.2em;
+            position:absolute;
+            bottom:8px;
+            left:20px;
+            color:rgb(51,51,51);
+            font-size:0.6em;
+            font-family:'Font Awesome 5 Free';
+            font-weight:700;
+        }

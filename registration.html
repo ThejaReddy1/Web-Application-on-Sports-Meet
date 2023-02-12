@@ -1,0 +1,61 @@
+<?php 
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+    <head><link href="css/reg.css" rel="stylesheet">
+        <style type="text/css">     
+            select {
+                width:300px;
+            }
+            input{width:300px;}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header"><h1>REGISTER HERE!</h1></div>
+            <form action="apply.php" method="post">
+                <div class="form-control">
+               
+                        <div class="p">Reg.Id:</div>
+                        <div><input type="text" name="id" required></div>
+                        <div class="p">Name:</div>
+                        <div><input type="text" name="name" required></div>
+                        <div class="p">Year</div>
+                        <div>
+                            <select name="year" >
+                                <option value="0">---Select---</option>
+                                <option value="I-year">I-year</option>
+                                <option value="II-year">II-year</option>
+                                <option value="III-year">III-year</option>
+                                <option value="IV-year">IV-year</option>
+                                
+                              </select>
+                        </div>
+                        <div class="p">Department</div>
+                        <div><select name="dept">
+                            <option value="0">---Select---</option>
+                            <option value="CSE">CSE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="MEC">MEC</option>
+                            <option value="CIVIL">CIVIL</option>
+                          </select></div>
+                          <div class="p">Sport/Game</div>
+                        <div><select name="sport">
+                            <option value="0">---Select---</option>
+                            <option value="Cricket">Cricket</option>
+                            <option value="FootBall">FootBall</option>
+                            <option value="BasketBall">Basket Ball</option>
+                            <option value="Throw Ball">Throw Ball</option>
+                            <option value="Volley Ball">Volley Ball</option>
+                            <option value="Kabaddi">Kabaddi</option>
+                            <option value="Chess">Chess</option>
+                            <option value="Badminton">Badminton</option>
+                          </select></div><br><br>
+                        <div><button type="submit" class="b">Apply</button></div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
